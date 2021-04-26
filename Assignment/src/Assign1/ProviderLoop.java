@@ -15,7 +15,7 @@ public class ProviderLoop {
 		return str3;
 	}
 
-//Method to Print Odd or Even
+//Method to Print Odd or  Even
 
 	int num;
 
