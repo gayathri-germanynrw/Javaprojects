@@ -33,17 +33,17 @@ public class ProviderLoop {
 
 // Given an integer n, print its first 10 multiple
 	int NumMul;
-	int i;
+	int j;
 
 	public int FirstTenMultiple(int NumMul) {
 
 		int result;
 		System.out.println("FirstTenMultiple \n");
-		for (i = 1; i <= 10; i++) {
+		for (j = 1; j <= 10; j++) {
 
-			result = NumMul * i;
+			result = NumMul * j;
 
-			System.out.println("Multiple of " + NumMul + "  *  " + i + " = " + result);
+			System.out.println("Multiple of " + NumMul + "  *  " + j + " = " + result);
 
 		}
 
