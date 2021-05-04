@@ -1,5 +1,7 @@
 package Assign1;
 
+import java.util.Scanner;
+
 public class ProviderCalc {
 
 	int num_Quotient;
@@ -56,5 +58,35 @@ public class ProviderCalc {
 		}
 
 	}
+	
+	public void gradeMarks()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the 1 st subject Marks");
+		int s1=sc.nextInt();
+		System.out.println("Enter the 2 nd subject Marks");
+		int s2=sc.nextInt();
+		System.out.println("Enter the 3 rd subject Marks");
+		int s3=sc.nextInt();
+		System.out.println("Enter the 4 th subject Marks");
+		int s4=sc.nextInt();
+		int total=s1+s2+s3+s4;
+		Float grade=total/4f;
+		if(grade > 60)
+		{
+			System.out.println("U r scored first class marks\n"+grade);
+		}
+		else
+		{
+			System.out.println("U r scored second class marks\n"+grade);
+		}
+		sc.close();
+	}
+	
+	
+	
+	
+	
+	
 
 }

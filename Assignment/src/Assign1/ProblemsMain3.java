@@ -40,6 +40,7 @@ public class ProblemsMain3 {
 		System.out.println("Enter third number \n");
 		int num3 = sc.nextInt();
 		pc.findLargeThreenumbers(num1, num2, num3);
+		pc.gradeMarks();
 
 		sc.close();
 	}
