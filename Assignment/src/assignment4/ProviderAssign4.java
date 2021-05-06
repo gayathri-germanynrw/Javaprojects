@@ -44,11 +44,51 @@ public class ProviderAssign4 {
 	    sb2.setLength(0);
 	}
 	
-	
+     public void chkTernary() {
 		
-		public void arrayOperations() {
-			
+		for(int i=0;i<100;i++)
+		{
+			String chkEvenOdd=(i%2==0)? "The number is Even---"+i:"The number is Odd----"+i;
+			System.out.println(chkEvenOdd);
 		}
-		
+	}
+    
+     
+     public void addMatrix() {
+    	 try 
+    	 {
+    		 
+    	 int [][] a= {{2,3,4},{6,7,8}};
+    	 int [][] b= {{5,6,22},{23,45,9}};
+    	 int size=3;    	
+    	 int [][] c=new int[size][size];
+     	  for(int i=0;i<2;i++)
+    	  {
+    		  for (int j=0;j<size;j++) {
+    			  c[i][j]= a[i][j]+b[i][j];
+    			  System.out.print(c[i][j]+" ");
+    		  }
+    		  System.out.println();
+    	  }
+      }catch(Exception e) {
+    	 System.out.println("print the exception ---"+e);
+     }
+     
+     }  
+     
   
+     public void chkWhile(int num) {
+    	 boolean chkValue=false;
+    	 while(num==5) {
+    		 
+    		 System.out.println("re-enter the another input ");
+    		 chkValue=true;
+    		 if(chkValue) {
+        		 System.out.println("You are exited from the program ");
+        	 }
+    		 
+    	 }
+    	 
+     }
+   
 }
