@@ -18,6 +18,8 @@ public class WildAnimals {
 		public String processAnimal(String[] animals) {
 			StringBuilder sb3=new StringBuilder();
 	        animals[2]="Bear";
+	        
+	        
 	        String finalStr="";
 	        
 			for (String string : animals) {
