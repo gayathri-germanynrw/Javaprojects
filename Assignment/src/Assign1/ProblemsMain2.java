@@ -12,9 +12,9 @@ public class ProblemsMain2 {
 
 		ProviderLoop pv = new ProviderLoop();
 
-		pv.PrintString(); // Method to Print Hello World and Hello Java
-		pv.EvenOrOdd(20);
-		pv.FirstTenMultiple(4);
+		pv.printString(); // Method to Print Hello World and Hello Java
+		pv.evenOrOdd(20);
+		pv.firstTenMultiple(4);
 		pv.printMyName("Gayathri");
 		pv.printstar();
 		pv.printStarOne();

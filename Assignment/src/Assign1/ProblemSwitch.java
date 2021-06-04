@@ -5,11 +5,13 @@ import java.util.Scanner;
 public class ProblemSwitch {
 
 	public void chkSwitch(int daynum) {
+		
 		switch (daynum) {
 
 		case 1:
 			System.out.println("Sunday");
 			break;
+		
 		case 2:
 			System.out.println("Monday");
 			break;
@@ -28,10 +30,10 @@ public class ProblemSwitch {
 
 	public static void main(String[] args) {
 		ProblemSwitch pvb = new ProblemSwitch();
-		Scanner sca = new Scanner(System.in);
-		int daynum = sca.nextInt();
+		Scanner scanner = new Scanner(System.in);
+		int daynum = scanner.nextInt();
 		pvb.chkSwitch(daynum);
-		sca.close();
+		scanner.close();
 	}
 
 }

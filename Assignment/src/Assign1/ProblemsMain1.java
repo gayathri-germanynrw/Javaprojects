@@ -11,10 +11,10 @@ public class ProblemsMain1 {
 
 	public static void main(String[] args) {
 		Provider pro = new Provider();
-		pro.FindEvenOddNumber(9);
-		pro.SumOfTwoNumbers(6, 9);
-		pro.AreaOfRectangle(5, 8);
-		pro.PrintString("JAVA");
+		pro.findEvenOddNumber(9);
+		pro.sumOfTwoNumbers(6, 9);
+		pro.areaOfRectangle(5, 8);
+		pro.printString("JAVA");
 
 	}
 
