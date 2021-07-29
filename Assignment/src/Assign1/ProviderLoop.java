@@ -1,25 +1,18 @@
 package Assign1;
 
 public class ProviderLoop {
+	
 	// Method to print Hello World and Hello Java
-
-	String str1;
-	String str2;
-	String str3;
-
-	public String PrintString() {
-		str1 = "World";
-		str2 = "Java";
-		str3 = "Hello " + str1 + "\nHello " + str2;
+	public String printString() {
+		String str1 = "World";
+		String str2 = "Java";
+		String str3 = "Hello " + str1 + "\nHello " + str2;
 		System.out.println(str3 + "\n");
 		return str3;
 	}
 
-//Method to Print Odd or  Even
-
-	int num;
-
-	public int EvenOrOdd(int num) {
+	//Method to Print Odd or  Even
+	public int evenOrOdd(int num) {
 		if (num % 2 != 0) {
 			System.out.println("entered number is Weird\n" + num);
 		} else if (num % 2 == 0 && num <= 10) {
@@ -28,31 +21,24 @@ public class ProviderLoop {
 			System.out.println("entered number is  Weird\n" + num + "\n");
 		}
 		return num;
-
 	}
 
-// Given an integer n, print its first 10 multiple
-	int NumMul;
-	int j;
-
-	public int FirstTenMultiple(int NumMul) {
-
+	// Given an integer n, print its first 10 multiple
+	public int firstTenMultiple(int NumMul) {
 		int result;
 		System.out.println("FirstTenMultiple \n");
-		for (j = 1; j <= 10; j++) {
+		for (int j = 1; j <= 10; j++) {
 
 			result = NumMul * j;
 
 			System.out.println("Multiple of " + NumMul + "  *  " + j + " = " + result);
 
 		}
-
-//System.out.println("Number multiple of \n "+i +"="+ NumMul);
 		return NumMul;
 
 	}
 
-	public String printMyName(String name) {
+	public void printMyName(String name) {
 		int strlen = name.length();
 		String fname = "";
 
@@ -61,8 +47,6 @@ public class ProviderLoop {
 			fname = fname + name.charAt(i);
 		}
 		System.out.println(fname);
-		return str1;
-
 	}
 
 	public void printstar() {

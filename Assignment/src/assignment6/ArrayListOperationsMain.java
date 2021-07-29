@@ -8,6 +8,7 @@ import java.util.Scanner;
 if "lion" is present, return String "Yay", else "Oops".*/
 
 public class ArrayListOperationsMain {
+
 	private static final String STR_PRESENT = "Yay";
 	private static final String STR_NOT_PRESENT = "Oops";
 
@@ -27,6 +28,7 @@ public class ArrayListOperationsMain {
 	public String displayListValues(List<String> animals) {
 
 		String chkString = "";
+
 		for (int i = 0; i < animals.size(); i++) {
 			if (animals.get(i).equalsIgnoreCase("Lion")) {
 				chkString = STR_PRESENT;
@@ -43,8 +45,10 @@ public class ArrayListOperationsMain {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		List<String> animals = new ArrayList<String>();
+
 		ArrayListOperationsMain arrayList = new ArrayListOperationsMain();
 		animals = arrayList.getListValueFromUser(scan, animals);
+
 		String afterChkString = arrayList.displayListValues(animals);
 		System.out.println("Availability of the Lion is  :\t" + afterChkString);
 

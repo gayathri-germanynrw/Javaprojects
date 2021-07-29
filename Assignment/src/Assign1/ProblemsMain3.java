@@ -24,21 +24,30 @@ public class ProblemsMain3 {
 	public static void main(String[] args) {
 		ProviderCalc pc = new ProviderCalc();
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("enter the dividend value\n");
 		int dividend = sc.nextInt();
+		
 		System.out.println("enter the divisor value\n");
 		int divisor = sc.nextInt();
+		
 		pc.getQuotientReminder(dividend, divisor);
 		pc.findOccurChar("Gayathri", 'y');
+		
 		System.out.println("Enter the number which needs to get sum of numbers");
 		int get_Num = sc.nextInt();
+		
 		pc.sumOfAllnumbers(get_Num);
+		
 		System.out.println("Enter first number \n");
 		int num1 = sc.nextInt();
+		
 		System.out.println("Enter second number \n");
 		int num2 = sc.nextInt();
+		
 		System.out.println("Enter third number \n");
 		int num3 = sc.nextInt();
+		
 		pc.findLargeThreenumbers(num1, num2, num3);
 		pc.gradeMarks();
 

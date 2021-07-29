@@ -2,10 +2,8 @@ package Assign1;
 
 public class Provider {
 
-// FindEvenOddNumber
-	int num;
-
-	public int FindEvenOddNumber(int num) {
+	// FindEvenOddNumber
+	public int findEvenOddNumber(int num) {
 		if (num % 2 == 0) {
 			System.out.println("entered num is Evennumber\n" + num);
 		} else {
@@ -16,12 +14,8 @@ public class Provider {
 
 	}
 
-// Sum of Two numbers
-	int a;
-	int b;
-	int c;
-
-	public int SumOfTwoNumbers(int a, int b) {
+	// Sum of Two numbers
+	public int sumOfTwoNumbers(int a, int b) {
 		int c = a + b;
 		System.out.println("Addtion of two numbers\n" + c);
 		return c;
@@ -29,12 +23,7 @@ public class Provider {
 	}
 
 	// Find Area of Rectangle
-
-	int length;
-	int breadth;
-	int area;
-
-	public int AreaOfRectangle(int length, int breadth) {
+	public int areaOfRectangle(int length, int breadth) {
 		int area = length * breadth;
 		System.out.println("Area of Rectangle\n" + area);
 		return area;
@@ -42,10 +31,7 @@ public class Provider {
 	}
 
 	// Print the String ,if it is Java
-
-	String str;
-
-	public String PrintString(String str) {
+	public String printString(String str) {
 		if (str.equalsIgnoreCase("java")) {
 			System.out.println("Entered String is\n " + str);
 		} else {

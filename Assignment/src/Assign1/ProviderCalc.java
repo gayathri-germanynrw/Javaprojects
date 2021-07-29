@@ -4,29 +4,16 @@ import java.util.Scanner;
 
 public class ProviderCalc {
 
-	int num_Quotient;
-	int num_Reminder;
-
-	String str_OccurChar;
-	char charString;
-	int sum = 0;
-	int n, n1, n2, n3;
-
 	public void getQuotientReminder(int num_Dividend, int num_Divisor) {
-
-		num_Quotient = num_Dividend / num_Divisor;
-		num_Reminder = num_Dividend % num_Divisor;
+		int num_Quotient =num_Dividend / num_Divisor;
+		int num_Reminder =num_Dividend % num_Divisor;
+		
 		System.out.println("Quotient value is\n" + num_Quotient);
 		System.out.println("Reminder value is \n" + num_Reminder);
 
 	}
 
-	public void findDuplicateChar(String str_Valid) {
-
-	}
-
 	// Find occurrence of a character in a string
-
 	public void findOccurChar(String str_OccurChar, char charString) {
 		int len = str_OccurChar.length();
 		int tot_occur = 0;
@@ -40,6 +27,7 @@ public class ProviderCalc {
 	}
 
 	public void sumOfAllnumbers(int n) {
+		int sum = 0;
 		for (int i = 0; i <= n; i++) {
 			sum += i;
 
@@ -62,15 +50,21 @@ public class ProviderCalc {
 	public void gradeMarks()
 	{
 		Scanner sc=new Scanner(System.in);
+		
 		System.out.println("Enter the 1 st subject Marks");
 		int s1=sc.nextInt();
+		
 		System.out.println("Enter the 2 nd subject Marks");
 		int s2=sc.nextInt();
+		
 		System.out.println("Enter the 3 rd subject Marks");
 		int s3=sc.nextInt();
+		
 		System.out.println("Enter the 4 th subject Marks");
 		int s4=sc.nextInt();
+		
 		int total=s1+s2+s3+s4;
+		
 		Float grade=total/4f;
 		if(grade > 60)
 		{
@@ -82,11 +76,4 @@ public class ProviderCalc {
 		}
 		sc.close();
 	}
-	
-	
-	
-	
-	
-	
-
 }
